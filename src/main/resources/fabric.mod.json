@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "vietnamsdelight",
+  "version": "${version}",
+  "name": "Vietnam's Delight Continued",
+  "description": "oh god, what have I done",
+  "authors": [
+    "ZachsRoom"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/vietnamsdelight/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.zachsroom.vietnamsdelight.client.VietnamsDelightDataGenerator"
+    ],
+    "client": [
+      "net.zachsroom.vietnamsdelight.client.VietnamsDelightClient"
+    ],
+    "main": [
+      "net.zachsroom.vietnamsdelight.VietnamsDelight"
+    ]
+  },
+  "mixins": [
+    "vietnamsdelight.mixins.json",
+    {
+      "config": "vietnamsdelight.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "fabricapi": "*",
+    "farmersdelight": ">=1.21.5-3.1.4+refabricated"
+  }
+}
