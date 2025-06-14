@@ -54,9 +54,9 @@ public class ModItems {
    );
    public static final Item NONLA = registerItem("non_la", new ArmorItem(ModArmorMaterials.NONLA, EquipmentType.HELMET, new Item.Settings()));
 
-   private static Item registerItem(String name, Item item) {
-      return (Item)class_2378.method_10230(class_7923.field_41178, new class_2960("vietnamsdelight", name), item);
-   }
+//   static Item registerItem(String name, Item item) {
+//      return (Item)class_2378.method_10230(class_7923.field_41178, new class_2960("vietnamsdelight", name), item);
+//   }
 
    public static void registerModItems() {
       VietnamsDelight.LOGGER.info("Registering Mod Items for vietnamsdelight");
