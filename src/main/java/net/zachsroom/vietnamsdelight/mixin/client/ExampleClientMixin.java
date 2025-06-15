@@ -11,10 +11,13 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Environment(EnvType.CLIENT)
 @Mixin({MinecraftClient.class})
 public class ExampleClientMixin {
-   @Inject(
-      at = {@At("HEAD")},
-      method = {"run"}
-   )
-   private void run(CallbackInfo info) {
-   }
+    @Inject(
+        at = {@At("HEAD")},
+        method = {"run"}
+    )
+    private void run(CallbackInfo info) {
+        // This method is called when the Minecraft client starts running.
+        // You can add your initialization code here.
+        System.out.println("Vietnams Delight Client is running!");
+    }
 }

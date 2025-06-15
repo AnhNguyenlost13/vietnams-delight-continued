@@ -7,6 +7,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKey;
 
 import net.minecraft.registry.tag.TagKey;
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.Identifier;
 
 import java.util.Map;
 
@@ -14,12 +16,12 @@ public class ModArmorMaterials implements ArmorMaterials {
     public static final int BASE_DURABILITY = 11;
     public static final RegistryKey<EquipmentAsset> NONLA_ARMOR_MATERIAL_KEY = RegistryKey.of(
         EquipmentAssetKeys.REGISTRY_KEY,
-        net.minecraft.util.Identifier.of("vietnamsdelight", "non_la")
+        Identifier.of("vietnamsdelight", "non_la")
     );
 
     public static final TagKey<Item> REPAIRS_NONLA_ARMOR = TagKey.of(
         Registries.ITEM.getKey(),
-        net.minecraft.util.Identifier.of("farmersdelight", "STRAW")
+        Identifier.of("farmersdelight", "STRAW")
     );
 
     public static final ArmorMaterial INSTANCE = new ArmorMaterial(
@@ -31,7 +33,7 @@ public class ModArmorMaterials implements ArmorMaterials {
             EquipmentType.HELMET, 1
         ),
         10,
-        net.minecraft.sound.SoundEvents.ITEM_ARMOR_EQUIP_LEATHER,
+        SoundEvents.ITEM_ARMOR_EQUIP_LEATHER,
         0.0F,
         0.0F,
         REPAIRS_NONLA_ARMOR,
