@@ -1,18 +1,19 @@
 package net.zachsroom.vietnamsdelight.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.class_4910;
-import net.minecraft.class_4915;
+import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.client.data.BlockStateModelGenerator;
+import net.minecraft.client.data.ItemModelGenerator;
+
 
 public class ModModelProvider extends FabricModelProvider {
-   public ModModelProvider(FabricDataOutput output) {
-      super(output);
-   }
+    public ModModelProvider(FabricDataOutput output) {
+        super(output);
+    }
 
-   public void generateBlockStateModels(class_4910 blockStateModelGenerator) {
-   }
+    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+    }
 
-   public void generateItemModels(class_4915 itemModelGenerator) {
-   }
+    public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+    }
 }

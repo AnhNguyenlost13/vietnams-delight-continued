@@ -44,4 +44,6 @@ public class ModArmorMaterials implements ArmorMaterials {
         "non_la",
         new Item.Settings().armor(ModArmorMaterials.INSTANCE, EquipmentType.HELMET)
     );
+
+
 }
