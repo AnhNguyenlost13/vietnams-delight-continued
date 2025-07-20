@@ -2,6 +2,7 @@ package net.zachsroom.vietnamsdelight.item;
 
 import net.minecraft.component.type.ConsumableComponent;
 import net.minecraft.component.type.ConsumableComponents;
+import net.minecraft.component.type.FoodComponent.Builder;
 import net.minecraft.entity.effect.StatusEffectInstance; // class_1293
 import net.minecraft.entity.effect.StatusEffects; // class_1294
 import net.minecraft.component.type.FoodComponent; // class_4174

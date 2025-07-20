@@ -14,7 +14,7 @@ import net.minecraft.registry.Registry;
 public class ModItemGroups {
     public static final RegistryKey<ItemGroup> VD_GROUP_KEY = RegistryKey.of(
             Registries.ITEM_GROUP.getKey(),
-            Identifier.of("vietnamsdelight", "VD_GROUP")
+            Identifier.of("vietnamsdelight", "vd_group")
     );
 
     public static final ItemGroup VD_GROUP = FabricItemGroup.builder()
@@ -27,7 +27,7 @@ public class ModItemGroups {
         Registry.register(Registries.ITEM_GROUP, VD_GROUP_KEY.getValue(), VD_GROUP);
 
         ItemGroupEvents.modifyEntriesEvent(VD_GROUP_KEY).register(meow -> {
-            meow.add(ModItems.RICEFLOUR);
+//            meow.add(ModItems.RICEFLOUR);
             meow.add(ModItems.CORNSTARCH);
             meow.add(ModItems.RICEMIXEDDOUGH);
             meow.add(ModItems.RICEBATTER);
@@ -37,7 +37,7 @@ public class ModItemGroups {
             meow.add(ModItems.PHO);
             meow.add(ModItems.CHICKENPHO);
             meow.add(ModItems.BEEFPHO);
-            meow.add(ModItems.NONLA);
+            meow.add(ModArmorMaterials.NONLA);
         });
     }
 }
