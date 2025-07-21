@@ -27,7 +27,7 @@ public class ModItemGroups {
         Registry.register(Registries.ITEM_GROUP, VD_GROUP_KEY.getValue(), VD_GROUP);
 
         ItemGroupEvents.modifyEntriesEvent(VD_GROUP_KEY).register(meow -> {
-//            meow.add(ModItems.RICEFLOUR);
+            meow.add(ModItems.RICEFLOUR);
             meow.add(ModItems.CORNSTARCH);
             meow.add(ModItems.RICEMIXEDDOUGH);
             meow.add(ModItems.RICEBATTER);

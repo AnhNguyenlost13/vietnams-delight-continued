@@ -21,7 +21,7 @@ public class ModArmorMaterials implements ArmorMaterials {
 
     public static final TagKey<Item> REPAIRS_NONLA_ARMOR = TagKey.of(
         Registries.ITEM.getKey(),
-        Identifier.of("farmersdelight", "STRAW")
+        Identifier.of("farmersdelight", "straw")
     );
 
     public static final ArmorMaterial INSTANCE = new ArmorMaterial(

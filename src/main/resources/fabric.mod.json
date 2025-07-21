@@ -34,6 +34,6 @@
     "fabric": "*",
     "minecraft": "${minecraft_version}",
     "fabric-api": ">=0.128.0+1.21.5",
-    "farmersdelight": ">=1.21.5-3.1.4+refabricated"
+    "farmersdelight": ">=1.21.5-3.2.4+refabricated"
   }
 }
